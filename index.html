@@ -44,6 +44,10 @@
 
   <h1>HOLIIIIIS OWO</h1>
 
+  <button onclick="activarModoNoche()" style="margin-top: 20px; padding: 10px; border-radius: 10px; background-color: #222; color: white;">
+  🌙 Cambiar a modo noche
+  </button>
+
   <!-- Primer burbuja -->
   <div class="entrada">
     <p>🧠 Hoy pensé que si los gatos pudieran hablar, me dirían que me relaje y tome otro frappé uwu...</p>
@@ -99,3 +103,22 @@
   </div>
 
 </body>
+
+<!-- Galería, audio, etc... van aquí -->
+
+<script>
+  function activarModoNoche() {
+    document.body.style.backgroundColor = "#111";
+    document.body.style.color = "#f2f2f2";
+
+    const entradas = document.querySelectorAll(".entrada, .bubble");
+    entradas.forEach(function(div) {
+      div.style.backgroundColor = "#222";
+      div.style.color = "#f2f2f2";
+      div.style.boxShadow = "0 0 15px #444";
+    });
+  }
+</script>
+
+</body>
+</html>
